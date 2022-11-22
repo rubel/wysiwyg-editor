@@ -26,8 +26,9 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        Rich Text Editor Example
+        Wysiwyg - Rich Text Editor
       </header>
+      <div style={{float:"left", width:"50%"}}>
       <Editor
         editorState={editorState}
         onEditorStateChange={handleEditorChange}
@@ -35,7 +36,9 @@ const App = () => {
         editorClassName="editor-class"
         toolbarClassName="toolbar-class"
       />
-      <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
+      </div>
+      
+      <div style={{float:"right", width:"49%"}} className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
     </div>
   )
 }
