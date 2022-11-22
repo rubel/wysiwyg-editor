@@ -38,7 +38,10 @@ const App = () => {
       />
       </div>
       
-      <div style={{float:"right", width:"49%"}} className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
+      <div style={{float:"right", width:"49%"}}>
+        <div style={{backgroundColor:"#ddd",width:"100px"}}><h2>Your input here</h2></div>
+        <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
+      </div>
     </div>
   )
 }
