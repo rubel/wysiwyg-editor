@@ -38,7 +38,7 @@ const App = () => {
       />
       </div>
       
-      <div style={{float:"right", width:"49%", minHeight:"390px", border:"1px solid black"}}>
+      <div style={{float:"right", width:"49%", minHeight:"422px", border:"1px solid black"}}>
         <div style={{backgroundColor:"#ddd",width:"100%"}}><h2>Your input here</h2></div>
         <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
       </div>
